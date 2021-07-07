@@ -1,7 +1,7 @@
 <div class="container">
     <h1 class="text-center my-4">你想對誰說幹話</h1>
     <form class="row" action="/generate-rubbish/" method="POST">
-        <div class="wrapper col-12 col-md-4">
+        <div class="wrapper mb-4 col-12 col-md-4">
             <div class="wrapper-pic mb-3">
                 <label for="engineer">
                     <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
@@ -9,11 +9,11 @@
                 </label>
             </div>
             <div class="wrapper-body text-center">
-                <input type="radio" name="person" id="engineer" value="engineer">工程師
+                <input type="radio" name="person" id="engineer" value="engineer" required>工程師
             </div>
         </div>
 
-        <div class="wrapper col-12 col-md-4">
+        <div class="wrapper mb-4 col-12 col-md-4">
             <div class="wrapper-pic mb-3">
                 <label for="designer">
                     <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="wrapper col-12 col-md-4">
+        <div class="wrapper mb-4 col-12 col-md-4">
             <div class="wrapper-pic mb-3">
                 <label for="entrepreneur">
                     <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
@@ -37,17 +37,15 @@
             </div>
         </div>
 
-        <div class="generate-rubbish">
-            <div>
-                <button stype="submit" class="btn bg-success">產生幹話</button>
-
-            </div>
-            <div>
-                {{rubbish}}
-
-            </div>
-
-
+        <div class="col-md-3 text-center mb-3">
+            <button stype="submit" class="btn btn-secondary btn-lg">產生幹話</button>
         </div>
+        {{!-- 產生區 --}}
+        {{#if rubbish}}
+        <div class="alert alert-info font-weight-bold col-md-9 generate-rubbish-area mx-auto" role="alert">
+            <code class="mr-2">{{rubbish}}</code> 
+        </div>
+        {{/if}}
+
     </form>
 </div>
