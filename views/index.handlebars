@@ -1,1 +1,75 @@
-<h1>sssssssssssssssssss</h1>
+<div class="container">
+    <h1 class="text-center my-4">你想對誰說幹話</h1>
+    <form class="row" action="/generate-rubbish/"method="POST">
+        <div class="wrapper col-12 col-md-4">
+            <div class="wrapper-pic mb-3">
+                <label for="engineer">
+                    <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                        alt="engineer">
+                </label>
+            </div>
+            <div class="wrapper-body text-center">
+                <input type="radio" name="person" id="engineer" value="engineer">工程師
+            </div>
+        </div>
+
+        <div class="wrapper col-12 col-md-4">
+            <div class="wrapper-pic mb-3">
+                <label for="designer">
+                    <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                        alt="engineer">
+                </label>
+            </div>
+            <div class="wrapper-body text-center">
+                <input type="radio" name="person" id="designer" value="designer">設計師
+            </div>
+        </div>
+
+        <div class="wrapper col-12 col-md-4">
+            <div class="wrapper-pic mb-3">
+                <label for="entrepreneur">
+                    <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                        alt="engineer">
+                </label>
+            </div>
+            <div class="wrapper-body text-center">
+                <input type="radio" name="person" id="entrepreneur" value="entrepreneur">創業家
+            </div>
+        </div>
+
+        <div class="generate-rubbish">
+            <button stype="submit" class="btn bg-success">產生幹話</button>
+            <input type="text" value="">
+        </div>
+
+
+
+        {{!-- <div class="wrapper">
+            <label for="engineer">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                    alt="engineer">
+            </label>
+            <input type="radio" name="person" id="engineer" value="engineer">工程師
+        </div>
+
+        <div class="wrapper">
+            <label for="designer">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                    alt="engineer">
+            </label>
+            <input type="radio" name="person" id="designer" value="designer">設計師
+        </div>
+
+        <div class="wrapper">
+            <label for="entrepreneur">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                    alt="engineer">
+            </label>
+            <input type="radio" name="person" id="entrepreneur" value="entrepreneur">創業家
+        </div> --}}
+
+
+
+
+    </form>
+</div>
