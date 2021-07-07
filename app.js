@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
+const generateRubbish = require('./generate_rubbish')
 const bodyParser = require('body-parser')
 const port = 3000
 
@@ -14,8 +15,10 @@ app.get('/', (req, res) => {
 })
 app.post('/generate-rubbish/', (req, res) => {
     const person = req.body.person
-    res.render('index', { person })
+    const rubbish = generateRubbish(person)
+    res.render('index', { rubbish })
 })
+
 app.listen(port, () => {
     console.log(`express server is running on http://localhost:${port}`)
 })
