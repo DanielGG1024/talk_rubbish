@@ -10,7 +10,7 @@ const phrase = ['很簡單', '很容易', '很快', '很正常']
 
 
 function generateRubbish(people) {
-    // 誰進來了 隨機取出task中對應值
+    // 誰進來了 隨機取出 task中對應值
     const peopleLength = task[people].length
     const taskRandomIndex = Math.floor(Math.random() * peopleLength)
     const taskRubbish = task[people][taskRandomIndex]
