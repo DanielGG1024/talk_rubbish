@@ -10,18 +10,32 @@ const phrase = ['很簡單', '很容易', '很快', '很正常']
 
 
 function generateRubbish(people) {
-    // 誰進來了 隨機取出 task中對應值
+    //找出身分
+    let target = ''
+    switch (people) {
+        case 'engineer':
+            target = '工程師'
+            break
+        case 'designer':
+            target = '設計師'
+            break
+        case 'entrepreneur':
+            target = '企業家'
+            break
+    }
+    // 隨機取出 task中對應值
     const peopleLength = task[people].length
     const taskRandomIndex = Math.floor(Math.random() * peopleLength)
     const taskRubbish = task[people][taskRandomIndex]
- 
+
     // 隨機取出phrase 一個值
     const phraswLength = phrase.length
     const phraseRandomIndex = Math.floor(Math.random() * phraswLength)
     const phraseRubbish = phrase[phraseRandomIndex]
 
-    // 兩個家再一起
-    const rubbish = taskRubbish + phraseRubbish
+    // 三個家再一起
+    const rubbish = '身為一個' + target + '，' + taskRubbish + '，' + phraseRubbish
     return rubbish
 }
+
 module.exports = generateRubbish
