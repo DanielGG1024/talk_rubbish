@@ -2,7 +2,7 @@
 
 # talk_rubbish
 
-![image](https://github.com/DanielGG1024/restaurant/blob/main/%E5%B9%B9%E8%A9%B1.png)
+![image](https://github.com/DanielGG1024/talk_rubbish/blob/main/rubbish.png)
 
 ## Features
 
